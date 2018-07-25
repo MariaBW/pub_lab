@@ -19,7 +19,13 @@ class Customer
     return @age >= 18
   end
 
+  def eat_food(food)
+    @drunkeness -= food.rej_level
+  end
 
-
+  def buy_food(food)
+    @wallet -= food.price
+    eat_food(food)
+  end
 
 end
