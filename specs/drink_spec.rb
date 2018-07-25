@@ -5,7 +5,7 @@ require_relative("../drink")
 class DrinkTest < MiniTest::Test
 
   def setup()
-    @drink1 = Drink.new("Margarita", 7)
+    @drink1 = Drink.new("Margarita", 7, 10)
 
   end
 
